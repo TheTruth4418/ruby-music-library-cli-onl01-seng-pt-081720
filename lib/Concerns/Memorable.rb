@@ -1,0 +1,3 @@
+module Memorable
+
+end
