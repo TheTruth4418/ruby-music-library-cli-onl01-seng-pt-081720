@@ -55,10 +55,10 @@ def self.new_from_filename(name)
   file_name = name.split(" - ")
   name = file_name[1]
   artist = file_name[0]
-
+  binding.pry
   song = Song.create(name)
   song.artist = artist
-  binding.pry
+
 end
 
 end
