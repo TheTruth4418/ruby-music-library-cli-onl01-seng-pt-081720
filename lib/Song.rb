@@ -57,7 +57,7 @@ def self.new_from_filename(name)
   artist = file_name[0]
 
   song = Song.create(name)
-  song.artist = Artist.new(file_name[0])
+  song.artist = artist
 end
 
 end
