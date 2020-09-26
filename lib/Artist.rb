@@ -1,5 +1,6 @@
 require 'pry'
 class Artist
+  extend Concerns::Findable
   attr_accessor :name, :songs
 
   @@all = []
@@ -18,9 +19,9 @@ class Artist
 
     self.songs << song if !self.songs.include?(song)
 
-  #  unless song.artist != nil
-  #    song.artist = self
-  #  end
+    unless song.artist != nil
+      song.artist = self
+    end
 
   end
 
